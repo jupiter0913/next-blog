@@ -2,13 +2,14 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-<script src="https://unpkg.com/flowbite-typography@1.0.3/dist/typography.min.css"/>
 const inter = Inter({ subsets: ['latin'] })
+import Script from 'next/script'
 
 export default function Blog() {
   return (
     <>
     <section class="bg-white dark:bg-gray-900">
+    <Script src="https://unpkg.com/flowbite-typography@1.0.3/dist/typography.min.css"></Script>
         <div class="grid gap-8 py-8 px-4 mx-auto max-w-screen-xl lg:gap-16 lg:grid-cols-2 lg:py-16 lg:px-6 ">
             <div>
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Blog</h2>
@@ -29,7 +30,7 @@ export default function Blog() {
                     <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers.</p>
                     <div class="flex justify-between items-center">
                         <div class="flex items-center space-x-4">
-                            <img class="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Gouch portrait"/>
+                            <Image class="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="Michael Gouch portrait"/>
                             <span class="font-medium dark:text-white">
                                 Michael Gouch
                             </span>
@@ -54,7 +55,7 @@ export default function Blog() {
                     <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers.</p>
                     <div class="flex justify-between items-center">
                         <div class="flex items-center space-x-4">
-                            <img class="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/neil-sims.png" alt="Neil Sims portrait"/>
+                            <Image class="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/neil-sims.png" alt="Neil Sims portrait"/>
                             <span class="font-medium dark:text-white">
                                 Neil Sims
                             </span>
@@ -79,7 +80,7 @@ export default function Blog() {
                     <p class="mb-5 font-light text-gray-500 dark:text-gray-400">Static websites are now used to bootstrap lots of websites and are becoming the basis for a variety of tools that even influence both web designers and developers influence both web designers and developers.</p>
                     <div class="flex justify-between items-center">
                         <div class="flex items-center space-x-4">
-                            <img class="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png" alt="Roberta Casas portrait"/>
+                            <Image class="w-7 h-7 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png" alt="Roberta Casas portrait"/>
                             <span class="font-medium dark:text-white">
                                 Roberta Casas
                             </span>

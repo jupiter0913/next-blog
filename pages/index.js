@@ -2,13 +2,14 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-<script src="https://unpkg.com/flowbite-typography@1.0.3/dist/typography.min.css"/>
 const inter = Inter({ subsets: ['latin'] })
+import Script from 'next/script'
 
 export default function Home() {
   return (
     <>
       <main className="py-8 lg:py-16 bg-white dark:bg-gray-900">
+        <Script src="https://unpkg.com/flowbite-typography@1.0.3/dist/typography.min.css"></Script>
         <div className="flex justify-between px-4 mx-auto max-w-screen-xl">
             <aside className="hidden relative ml-auto xl:block" aria-labelledby="sidebar-label">
                 <div className="sticky top-6 p-2 bg-gray-50 rounded-lg border border-gray-200 dark:border-gray-700 dark:bg-gray-800">
@@ -97,7 +98,7 @@ export default function Home() {
                         Flowbite</a>. It comes with the most commonly used UI components, such as buttons, navigation
                     bars, cards, form elements, and more which are conveniently built with the utility classNamees from
                     Tailwind CSS.</p>
-                <figure><img src="https://flowbite.s3.amazonaws.com/typography-plugin/typography-image-1.png" className="mx-auto" alt=""/>
+                <figure><Image src="https://flowbite.s3.amazonaws.com/typography-plugin/typography-image-1.png" className="mx-auto" alt=""/>
                     <figcaption>Digital art by Anonymous</figcaption>
                 </figure>
                 <h2>Getting started with Flowbite</h2>
@@ -110,7 +111,7 @@ export default function Home() {
                         guide</a> to explore the elements by including the CDN files into your project. But if you want
                     to build a project with Flowbite I recommend you to follow the build tools steps so that you can
                     purge and minify the generated CSS.</p>
-                <p>You'll also receive a lot of useful application UI, Publisher UI, and e-commerce pages that can help
+                <p>You&apos;ll also receive a lot of useful application UI, Publisher UI, and e-commerce pages that can help
                     you get started with your projects even faster. You can check out this <a
                         href="https://flowbite.com/docs/components/tables/">comparison table</a> to better understand
                     the differences between the open-source and pro version of Flowbite.</p>
@@ -119,8 +120,8 @@ export default function Home() {
                     will come in handy:</p>
                 <ol>
                     <li><strong>Usability testing</strong>. Does your user know how to exit out of screens? Can they
-                        follow your intended user journey and buy something from the site you’ve designed? By running a
-                        usability test, you’ll be able to see how users will interact with your design once it’s live;
+                        follow your intended user journey and buy something from the site you&apos;ve designed? By running a
+                        usability test, you&apos;ll be able to see how users will interact with your design once it&apos;s live;
                     </li>
                     <li><strong>Involving stakeholders</strong>. Need to check if your GDPR consent boxes are displaying
                         properly? Pass your prototype to your data protection team and they can test it for real;</li>
@@ -133,7 +134,7 @@ export default function Home() {
                 <h3>Laying the groundwork for best design</h3>
                 <p>Before going digital, you might benefit from scribbling down some ideas in a sketchbook. This way,
                     you can think things through before committing to an actual design project.</p>
-                <p>Let's start by including the CSS file inside the <code>head</code> tag of your HTML.</p>
+                <p>Let&apos;s start by including the CSS file inside the <code>head</code> tag of your HTML.</p>
                 <h3>Understanding typography</h3>
                 <h4>Type properties</h4>
                 <p>A typeface is a collection of letters. While each letter is unique, certain shapes are shared across
@@ -154,7 +155,7 @@ export default function Home() {
                     <li>Low contrast between thick and thin strokes</li>
                     <li>Diagonal stress in the strokes</li>
                     <li>Slanted serifs on lower-case ascenders</li>
-                </ul><img src="https://flowbite.s3.amazonaws.com/typography-plugin/typography-image-2.png" alt=""/>
+                </ul><Image src="https://flowbite.s3.amazonaws.com/typography-plugin/typography-image-2.png" alt=""/>
                 <ol>
                     <li>Low contrast between thick and thin strokes</li>
                     <li>Diagonal stress in the strokes</li>
@@ -170,20 +171,20 @@ export default function Home() {
                 <p>A serif is a small shape or projection that appears at the beginning or end of a stroke on a letter.
                     Typefaces with serifs are called serif typefaces. Serif fonts are classNameified as one of the
                     following:</p>
-                <pre><code className="language-html">&lt;dl className="grid grid-cols-2 gap-8 max-w-screen-md text-gray-900 sm:grid-cols-3 dark:text-white"&gt;
-                    &lt;div className="flex flex-col justify-center items-center"&gt;
-                        &lt;dt className="mb-2 text-3xl font-extrabold"&gt;73M+&lt;/dt&gt;
-                        &lt;dd className="text-lg font-normal text-gray-500 dark:text-gray-400"&gt;developers&lt;/dd&gt;
-                    &lt;/div&gt;
-                    &lt;div className="flex flex-col justify-center items-center"&gt;
-                        &lt;dt className="mb-2 text-3xl font-extrabold"&gt;1B+&lt;/dt&gt;
-                        &lt;dd className="text-lg font-normal text-gray-500 dark:text-gray-400"&gt;contributors&lt;/dd&gt;
-                    &lt;/div&gt;
-                    &lt;div className="flex flex-col justify-center items-center"&gt;
-                        &lt;dt className="mb-2 text-3xl font-extrabold"&gt;4M+&lt;/dt&gt;
-                        &lt;dd className="text-lg font-normal text-gray-500 dark:text-gray-400"&gt;organizations&lt;/dd&gt;
-                    &lt;/div&gt;
-                    &lt;/dl&gt;
+                <pre><code className="language-html"><dl className="grid grid-cols-2 gap-8 max-w-screen-md text-gray-900 sm:grid-cols-3 dark:text-white">
+                    <div className="flex flex-col justify-center items-center">
+                        <dt className="mb-2 text-3xl font-extrabold">73M+</dt>
+                        <dd className="text-lg font-normal text-gray-500 dark:text-gray-400">developers</dd>
+                    </div>
+                    <div className="flex flex-col justify-center items-center">
+                        <dt className="mb-2 text-3xl font-extrabold">1B+</dt>
+                        <dd className="text-lg font-normal text-gray-500 dark:text-gray-400">contributors</dd>
+                    </div>
+                    <div className="flex flex-col justify-center items-center">
+                        <dt className="mb-2 text-3xl font-extrabold">4M+</dt>
+                        <dd className="text-lg font-normal text-gray-500 dark:text-gray-400">organizations</dd>
+                    </div>
+                    </dl>
                     </code></pre>
                 <h4>Table example</h4>
                 <p>A serif is a small shape or projection that appears at the beginning or end of a stroke on a letter.
@@ -192,7 +193,7 @@ export default function Home() {
                     <thead>
                         <tr>
                             <th>Country</th>
-                            <th>Date &amp; Time</th>
+                            <th>Date & Time</th>
                             <th>Amount</th>
                         </tr>
                     </thead>
@@ -231,18 +232,18 @@ export default function Home() {
                 </table>
                 <h3>Best practices for setting up your prototype</h3>
                 <p><strong>Low fidelity or high fidelity?</strong> Fidelity refers to how close a prototype will be to
-                    the real deal. If you’re simply preparing a quick visual aid for a presentation, a low-fidelity
+                    the real deal. If you&apos;re simply preparing a quick visual aid for a presentation, a low-fidelity
                     prototype — like a wireframe with placeholder images and some basic text — would be more than
-                    enough. But if you’re going for more intricate usability testing, a high-fidelity prototype — with
+                    enough. But if you&apos;re going for more intricate usability testing, a high-fidelity prototype — with
                     on-brand colors, fonts and imagery — could help get more pointed results.</p>
                 <p><strong>Consider your user</strong>. To create an intuitive user flow, try to think as your user
                     would when interacting with your product. While you can fine-tune this during beta testing,
-                    considering your user’s needs and habits early on will save you time by setting you on the right
+                    considering your user&apos;s needs and habits early on will save you time by setting you on the right
                     path.</p>
                 <p><strong>Start from the inside out</strong>. A nice way to both organize your tasks and create more
-                    user-friendly prototypes is by building your prototypes ‘inside out’. Start by focusing on what will
+                    user-friendly prototypes is by building your prototypes &apos;inside out&apos;. Start by focusing on what will
                     be important to your user, like a Buy now button or an image gallery, and list each element by order
-                    of priority. This way, you’ll be able to create a prototype that puts your users’ needs at the heart
+                    of priority. This way, you&apos;ll be able to create a prototype that puts your users&apos; needs at the heart
                     of your design.</p>
                 <p>And there you have it! Everything you need to design and share prototypes — right in Flowbite Figma.
                 </p>
@@ -276,7 +277,7 @@ export default function Home() {
                     <article className="p-6 mb-6 text-base bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-800 dark:border-gray-700">
                         <footer className="flex justify-between items-center mb-2">
                             <div className="flex items-center">
-                                <img className="mr-2 w-8 h-8 rounded-lg" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="Michael Gough"/>
+                                <Image className="mr-2 w-8 h-8 rounded-lg" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="Michael Gough"/>
                                 <div>
                                     <span className="text-sm font-semibold text-gray-900 dark:text-white">Michael Gough</span> 
                                     <p className="text-sm font-light text-gray-500 dark:text-gray-400"><time pubdate="2022-02-08" title="February 8th, 2022">Feb. 8, 2022</time></p>
@@ -328,7 +329,7 @@ export default function Home() {
                     <article className="p-6 mb-6 ml-6 text-base bg-white rounded-lg border border-gray-200 shadow-sm lg:ml-12 dark:bg-gray-800 dark:border-gray-700">
                         <footer className="flex justify-between items-center mb-2">
                             <div className="flex items-center">
-                                <img className="mr-2 w-8 h-8 rounded-lg" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="Jese Leos"/>
+                                <Image className="mr-2 w-8 h-8 rounded-lg" src="https://flowbite.com/docs/images/people/profile-picture-5.jpg" alt="Jese Leos"/>
                                 <div>
                                     <span className="text-sm font-semibold text-gray-900 dark:text-white">Jese Leos</span> 
                                     <p className="text-sm font-light text-gray-500 dark:text-gray-400"><time pubdate="2022-02-12" title="February 12th, 2022">Feb. 12, 2022</time></p>
@@ -380,7 +381,7 @@ export default function Home() {
                     <article className="p-6 mb-6 text-base bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-800 dark:border-gray-700">
                         <footer className="flex justify-between items-center mb-2">
                             <div className="flex items-center">
-                                <img className="mr-2 w-8 h-8 rounded-lg" src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="Bonnie Green"/>
+                                <Image className="mr-2 w-8 h-8 rounded-lg" src="https://flowbite.com/docs/images/people/profile-picture-3.jpg" alt="Bonnie Green"/>
                                 <div>
                                     <span className="text-sm font-semibold text-gray-900 dark:text-white">Bonnie Green</span> 
                                     <p className="text-sm font-light text-gray-500 dark:text-gray-400"><time pubdate="2022-03-12" title="March 12th, 2022">Mar. 12, 2022</time></p>
@@ -432,7 +433,7 @@ export default function Home() {
                     <article className="p-6 text-base bg-white rounded-lg border border-gray-200 shadow-sm dark:bg-gray-800 dark:border-gray-700">
                         <footer className="flex justify-between items-center mb-2">
                             <div className="flex items-center">
-                                <img className="mr-2 w-8 h-8 rounded-lg" src="https://flowbite.com/docs/images/people/profile-picture-4.jpg" alt="Helene Engels"/>
+                                <Image className="mr-2 w-8 h-8 rounded-lg" src="https://flowbite.com/docs/images/people/profile-picture-4.jpg" alt="Helene Engels"/>
                                 <div>
                                     <span className="text-sm font-semibold text-gray-900 dark:text-white">Helene Engels</span> 
                                     <p className="text-sm font-light text-gray-500 dark:text-gray-400"><time pubdate="2022-06-23" title="June 23rd, 2022">Jun. 23, 2022</time></p>
@@ -489,7 +490,7 @@ export default function Home() {
                     <h4 className="mb-4 text-sm font-bold text-gray-900 uppercase dark:text-white">Latest news</h4>
                     <div className="flex items-center py-4">
                         <a href="#" className="shrink-0">
-                            <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-1.png" className="mr-4 w-12 max-w-full h-12 rounded-lg" alt="Image 1"/>
+                            <Image src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-1.png" className="mr-4 w-12 max-w-full h-12 rounded-lg" alt="Image 1"/>
                         </a>
                         <a href="#">
                             <h5 className="font-semibold leading-tight text-gray-900 dark:text-white hover:underline">SaaS can help speed up Cybersecurity projects</h5>
@@ -497,7 +498,7 @@ export default function Home() {
                     </div>
                     <div className="flex items-center py-4">
                         <a href="#" className="shrink-0">
-                            <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-2.png" className="mr-4 w-12 max-w-full h-12 rounded-lg" alt="Image 2"/>
+                            <Image src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-2.png" className="mr-4 w-12 max-w-full h-12 rounded-lg" alt="Image 2"/>
                         </a>
                         <a href="#">
                             <h5 className="font-semibold leading-tight text-gray-900 dark:text-white hover:underline">Crunching large datasets made fast: Flowbite Library</h5>
@@ -505,7 +506,7 @@ export default function Home() {
                     </div>
                     <div className="flex items-center py-4">
                         <a href="#" className="shrink-0">
-                            <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-3.png" className="mr-4 w-12 max-w-full h-12 rounded-lg" alt="Image 2"/>
+                            <Image src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-3.png" className="mr-4 w-12 max-w-full h-12 rounded-lg" alt="Image 2"/>
                         </a>
                         <a href="#">
                             <h5 className="font-semibold leading-tight text-gray-900 dark:text-white hover:underline">Here’s how to make a react app with Flowbite Blocks</h5>
@@ -513,7 +514,7 @@ export default function Home() {
                     </div>
                     <div className="flex items-center py-4">
                         <a href="#" className="shrink-0">
-                            <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-2.png" className="mr-4 w-12 max-w-full h-12 rounded-lg" alt="Image 3"/>
+                            <Image src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-2.png" className="mr-4 w-12 max-w-full h-12 rounded-lg" alt="Image 3"/>
                         </a>
                         <a href="#">
                             <h5 className="font-semibold leading-tight text-gray-900 dark:text-white hover:underline">AI meets IoT: What is the artificial intelligence</h5>
@@ -521,7 +522,7 @@ export default function Home() {
                     </div>
                     <div className="flex items-center pt-4">
                         <a href="#" className="shrink-0">
-                            <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-1.png" className="mr-4 w-12 max-w-full h-12 rounded-lg" alt="Image 2"/>
+                            <Image src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/image-1.png" className="mr-4 w-12 max-w-full h-12 rounded-lg" alt="Image 2"/>
                         </a>
                         <a href="#">
                             <h5 className="font-semibold leading-tight text-gray-900 dark:text-white hover:underline">How to create a basic application with Flowbite</h5>
@@ -530,7 +531,7 @@ export default function Home() {
                 </div>
                 <div className="p-5 mb-6 bg-white rounded-lg border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
                     <h4 className="mb-2 font-semibold text-gray-900 dark:text-white">Get the best of Flowbite News delivered to your inbox</h4>
-                    <p className="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">Subscribe our newsletter for latest world news. Let's stay updated!</p>
+                    <p className="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">Subscribe our newsletter for latest world news. Let&apos;s stay updated!</p>
                     <form action="#">
                         <label htmlFor="name-icon" className="sr-only">Your Email</label>
                         <div className="relative mb-4">
@@ -567,7 +568,7 @@ export default function Home() {
                     <h4 className="mb-4 text-sm font-bold text-gray-900 uppercase dark:text-white">Follow me</h4>
                     <div className="flex items-center mb-4">
                         <div className="mr-3 shrink-0">
-                            <img className="mt-1 w-8 h-8 rounded-full"
+                            <Image className="mt-1 w-8 h-8 rounded-full"
                                 src="https://flowbite.com/docs/images/people/profile-picture-1.jpg"
                                 alt="Jese Leos"/>
                         </div>
@@ -576,7 +577,7 @@ export default function Home() {
                             <span className="text-sm font-light">546k followers</span>
                         </div>
                     </div>
-                    <p className="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">Hey! I'm Jese Leos. I'm a career-changer. Bootcamp grad & Dev.</p>
+                    <p className="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">Hey! I&apos;m Jese Leos. I&apos;m a career-changer. Bootcamp grad & Dev.</p>
                     <button type="button" className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 w-full">Follow</button>
                 </div>
                 <div>   
@@ -596,7 +597,7 @@ export default function Home() {
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                 <article>
                     <a href="#">
-                        <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/wordpress/image-1.jpg" className="mb-5 w-full max-w-full rounded-lg" alt="Image 1"/>
+                        <Image src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/wordpress/image-1.jpg" className="mb-5 w-full max-w-full rounded-lg" alt="Image 1"/>
                     </a>
                     <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
                         <a href="#">Flowbite enables IT to automate Apple device configuration</a>
@@ -607,7 +608,7 @@ export default function Home() {
                 </article>
                 <article>
                     <a href="#">
-                        <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/wordpress/image-2.jpg" className="mb-5 w-full max-w-full rounded-lg" alt="Image 2"/>
+                        <Image src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/wordpress/image-2.jpg" className="mb-5 w-full max-w-full rounded-lg" alt="Image 2"/>
                     </a>
                     <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
                         <a href="#">How AI is transforming your smartphone</a>
@@ -618,7 +619,7 @@ export default function Home() {
                 </article>
                 <article>
                     <a href="#">
-                        <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/wordpress/image-3.jpg" className="mb-5 w-full max-w-full rounded-lg" alt="Image 3"/>
+                        <Image src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/wordpress/image-3.jpg" className="mb-5 w-full max-w-full rounded-lg" alt="Image 3"/>
                     </a>
                     <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
                         <a href="#">Android, ChromeOS, and the future of app discovery</a>
@@ -629,7 +630,7 @@ export default function Home() {
                 </article>
                 <article>
                     <a href="#">
-                        <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/wordpress/image-4.jpg" className="mb-5 w-full max-w-full rounded-lg" alt="Image 4"/>
+                        <Image src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/wordpress/image-4.jpg" className="mb-5 w-full max-w-full rounded-lg" alt="Image 4"/>
                     </a>
                     <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
                         <a href="#">What Google collaboration app offers remote teams</a>
@@ -640,7 +641,7 @@ export default function Home() {
                 </article>
                 <article>
                     <a href="#">
-                        <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/wordpress/image-5.jpg" className="mb-5 w-full max-w-full rounded-lg" alt="Image 5"/>
+                        <Image src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/wordpress/image-5.jpg" className="mb-5 w-full max-w-full rounded-lg" alt="Image 5"/>
                     </a>
                     <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
                         <a href="#">Collaboration app spending grows in the face of crisis</a>
@@ -651,10 +652,10 @@ export default function Home() {
                 </article>
                 <article>
                     <a href="#">
-                        <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/wordpress/image-6.jpg" className="mb-5 w-full max-w-full rounded-lg" alt="Image 6"/>
+                        <Image src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/articles/wordpress/image-6.jpg" className="mb-5 w-full max-w-full rounded-lg" alt="Image 6"/>
                     </a>
                     <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
-                        <a href="#">For developers, too many meetings, too little 'focus' time</a>
+                        <a href="#">For developers, too many meetings, too little &apos;focus&apos; time</a>
                     </h2>
                     <a href="#" className="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline">
                         Read more

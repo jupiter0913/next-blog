@@ -2,18 +2,20 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-<script src="https://unpkg.com/flowbite-typography@1.0.3/dist/typography.min.css"/>
 const inter = Inter({ subsets: ['latin'] })
+import Script from 'next/script'
+
 
 export default function Blog() {
   return (
     <>
     <header>
+    <Script src="https://unpkg.com/flowbite-typography@1.0.3/dist/typography.min.css"></Script>
         <nav className="bg-white border-gray-200 py-2.5 dark:bg-gray-800">
             <div className="flex flex-wrap justify-between items-center px-4 mx-auto max-w-screen-xl">
                 <a href="https://flowbite.com"
                     className="flex items-center hover:text-primary-600 dark:hover-text-primary-500">
-                    <img src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+                    <Image src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
                     <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
                 </a>
                 <div className="flex items-center lg:order-2">
@@ -358,7 +360,7 @@ export default function Blog() {
                         Flowbite</a>. It comes with the most commonly used UI components, such as buttons, navigation
                     bars, cards, form elements, and more which are conveniently built with the utility classes from
                     Tailwind CSS.</p>
-                <figure><img src="https://flowbite.s3.amazonaws.com/typography-plugin/typography-image-1.png" alt=""/>
+                <figure><Image src="https://flowbite.s3.amazonaws.com/typography-plugin/typography-image-1.png" alt=""/>
                     <figcaption>Digital art by Anonymous</figcaption>
                 </figure>
                 <h2>Getting started with Flowbite</h2>
@@ -371,7 +373,7 @@ export default function Blog() {
                         guide</a> to explore the elements by including the CDN files into your project. But if you want
                     to build a project with Flowbite I recommend you to follow the build tools steps so that you can
                     purge and minify the generated CSS.</p>
-                <p>You'll also receive a lot of useful application UI, Publisher UI, and e-commerce pages that can help
+                <p>You&apos;ll also receive a lot of useful application UI, Publisher UI, and e-commerce pages that can help
                     you get started with your projects even faster. You can check out this <a
                         href="https://flowbite.com/docs/components/tables/">comparison table</a> to better understand
                     the differences between the open-source and pro version of Flowbite.</p>
@@ -380,8 +382,8 @@ export default function Blog() {
                     will come in handy:</p>
                 <ol>
                     <li><strong>Usability testing</strong>. Does your user know how to exit out of screens? Can they
-                        follow your intended user journey and buy something from the site you’ve designed? By running a
-                        usability test, you’ll be able to see how users will interact with your design once it’s live;
+                        follow your intended user journey and buy something from the site you&apos;ve designed? By running a
+                        usability test, you&apos;ll be able to see how users will interact with your design once it&apos;s live;
                     </li>
                     <li><strong>Involving stakeholders</strong>. Need to check if your GDPR consent boxes are displaying
                         properly? Pass your prototype to your data protection team and they can test it for real;</li>
@@ -394,7 +396,7 @@ export default function Blog() {
                 <h3>Laying the groundwork for best design</h3>
                 <p>Before going digital, you might benefit from scribbling down some ideas in a sketchbook. This way,
                     you can think things through before committing to an actual design project.</p>
-                <p>Let's start by including the CSS file inside the <code>head</code> tag of your HTML.</p>
+                <p>Let&apos;s start by including the CSS file inside the <code>head</code> tag of your HTML.</p>
                 <h3>Understanding typography</h3>
                 <h4>Type properties</h4>
                 <p>A typeface is a collection of letters. While each letter is unique, certain shapes are shared across
@@ -415,7 +417,7 @@ export default function Blog() {
                     <li>Low contrast between thick and thin strokes</li>
                     <li>Diagonal stress in the strokes</li>
                     <li>Slanted serifs on lower-case ascenders</li>
-                </ul><img src="https://flowbite.s3.amazonaws.com/typography-plugin/typography-image-2.png" alt=""/>
+                </ul><Image src="https://flowbite.s3.amazonaws.com/typography-plugin/typography-image-2.png" alt=""/>
                 <ol>
                     <li>Low contrast between thick and thin strokes</li>
                     <li>Diagonal stress in the strokes</li>
@@ -431,20 +433,20 @@ export default function Blog() {
                 <p>A serif is a small shape or projection that appears at the beginning or end of a stroke on a letter.
                     Typefaces with serifs are called serif typefaces. Serif fonts are classified as one of the
                     following:</p>
-                <pre><code className="language-html">&lt;dl className="grid grid-cols-2 gap-8 max-w-screen-md text-gray-900 sm:grid-cols-3 dark:text-white"&gt;
-    &lt;div className="flex flex-col justify-center items-center"&gt;
-        &lt;dt className="mb-2 text-3xl font-extrabold"&gt;73M+&lt;/dt&gt;
-        &lt;dd className="text-lg font-normal text-gray-500 dark:text-gray-400"&gt;developers&lt;/dd&gt;
-    &lt;/div&gt;
-    &lt;div className="flex flex-col justify-center items-center"&gt;
-        &lt;dt className="mb-2 text-3xl font-extrabold"&gt;1B+&lt;/dt&gt;
-        &lt;dd className="text-lg font-normal text-gray-500 dark:text-gray-400"&gt;contributors&lt;/dd&gt;
-    &lt;/div&gt;
-    &lt;div className="flex flex-col justify-center items-center"&gt;
-        &lt;dt className="mb-2 text-3xl font-extrabold"&gt;4M+&lt;/dt&gt;
-        &lt;dd className="text-lg font-normal text-gray-500 dark:text-gray-400"&gt;organizations&lt;/dd&gt;
-    &lt;/div&gt;
-    &lt;/dl&gt;
+                <pre><code className="language-html"><dl className="grid grid-cols-2 gap-8 max-w-screen-md text-gray-900 sm:grid-cols-3 dark:text-white">
+    <div className="flex flex-col justify-center items-center">
+        <dt className="mb-2 text-3xl font-extrabold">73M+</dt>
+        <dd className="text-lg font-normal text-gray-500 dark:text-gray-400">developers</dd>
+    </div>
+    <div className="flex flex-col justify-center items-center">
+        <dt className="mb-2 text-3xl font-extrabold">1B+</dt>
+        <dd className="text-lg font-normal text-gray-500 dark:text-gray-400">contributors</dd>
+    </div>
+    <div className="flex flex-col justify-center items-center">
+        <dt className="mb-2 text-3xl font-extrabold">4M+</dt>
+        <dd className="text-lg font-normal text-gray-500 dark:text-gray-400">organizations</dd>
+    </div>
+    </dl>
     </code></pre>
                 <h4>Table example</h4>
                 <p>A serif is a small shape or projection that appears at the beginning or end of a stroke on a letter.
@@ -453,7 +455,7 @@ export default function Blog() {
                     <thead>
                         <tr>
                             <th>Country</th>
-                            <th>Date &amp; Time</th>
+                            <th>Date & Time</th>
                             <th>Amount</th>
                         </tr>
                     </thead>
@@ -517,7 +519,7 @@ export default function Blog() {
                     </div>
                     <div className="flex">
                         <div className="mr-3 shrink-0 hidden sm:block">
-                            <img className="w-9 h-9 rounded-full"
+                            <Image className="w-9 h-9 rounded-full"
                                     src="https://flowbite.com/docs/images/people/profile-picture-4.jpg"
                                     alt="Michael Burry"/>
                         </div>
@@ -593,7 +595,7 @@ export default function Blog() {
                             <div className="w-full">
                                 <footer className="flex justify-between items-center mb-2 w-full">
                                     <a href="#" className="flex items-center">
-                                        <img className="mr-2 w-6 h-6 rounded-full"
+                                        <Image className="mr-2 w-6 h-6 rounded-full"
                                                 src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
                                                 alt="Bonnie Green"/>
                                         <p className="inline-flex flex-col md:flex-row items-start mr-3 text-sm text-gray-900 dark:text-white">
@@ -660,7 +662,7 @@ export default function Blog() {
                             <div className="w-full">
                                 <footer className="flex justify-between items-center mb-2 w-full">
                                     <a href="#" className="flex items-center">
-                                        <img className="mr-2 w-6 h-6 rounded-full"
+                                        <Image className="mr-2 w-6 h-6 rounded-full"
                                                 src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
                                                 alt="Jese Leos"/>
                                         <p className="inline-flex flex-col md:flex-row items-start mr-3 text-sm text-gray-900 dark:text-white">
@@ -727,7 +729,7 @@ export default function Blog() {
                             <div className="w-full">
                                 <footer className="flex justify-between items-center mb-2 w-full">
                                     <a href="#" className="flex items-center">
-                                        <img className="mr-2 w-6 h-6 rounded-full"
+                                        <Image className="mr-2 w-6 h-6 rounded-full"
                                                 src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
                                                 alt="Danny Hart"/>
                                         <p className="inline-flex flex-col md:flex-row items-start mr-3 text-sm text-gray-900 dark:text-white">
@@ -796,7 +798,7 @@ export default function Blog() {
                             <div className="w-full">
                                 <footer className="flex justify-between items-center mb-2 w-full">
                                     <a href="#" className="flex items-center">
-                                        <img className="mr-2 w-6 h-6 rounded-full"
+                                        <Image className="mr-2 w-6 h-6 rounded-full"
                                                 src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
                                                 alt="Bonnie Green"/>
                                         <p className="inline-flex flex-col md:flex-row items-start mr-3 text-sm text-gray-900 dark:text-white">
@@ -863,7 +865,7 @@ export default function Blog() {
                             <div className="w-full">
                                 <footer className="flex justify-between items-center mb-2 w-full">
                                     <a href="#" className="flex items-center">
-                                        <img className="mr-2 w-6 h-6 rounded-full"
+                                        <Image className="mr-2 w-6 h-6 rounded-full"
                                                 src="https://flowbite.com/docs/images/people/profile-picture-4.jpg"
                                                 alt="Helene Engels"/>
                                         <p className="inline-flex flex-col md:flex-row items-start mr-3 text-sm text-gray-900 dark:text-white">
@@ -926,7 +928,7 @@ export default function Blog() {
                     <div className="p-6 mb-6 text-gray-500 rounded-lg border border-gray-200 dark:border-gray-700 dark:text-gray-400">
                         <a href="#" className="flex items-center mb-4">
                             <div className="mr-3 shrink-0">
-                                <img className="mt-1 w-8 h-8 rounded-full"
+                                <Image className="mt-1 w-8 h-8 rounded-full"
                                     src="https://flowbite.com/docs/images/people/profile-picture-1.jpg"
                                     alt="Jese Leos"/>
                             </div>
@@ -935,7 +937,7 @@ export default function Blog() {
                                 <span className="text-sm">34k followers</span>
                             </div>
                         </a>
-                        <p className="mb-4 text-sm text-gray-500 dark:text-gray-400">Hey! I'm Jese Leos. I'm a career-changer. Bootcamp grad & Dev.</p>
+                        <p className="mb-4 text-sm text-gray-500 dark:text-gray-400">Hey! I&apos;m Jese Leos. I&apos;m a career-changer. Bootcamp grad & Dev.</p>
                         <dl className="mb-5">
                             <dt className="mb-2 text-sm font-bold text-gray-900 uppercase dark:text-white">Location</dt>
                             <dd className="mb-3 text-sm text-gray-500 dark:text-gray-400">California, United States</dd>
@@ -985,7 +987,7 @@ export default function Blog() {
                         <ul className="space-y-4 font-light text-gray-500 dark:text-gray-400">
                             <li className="flex justify-between items-start">
                                 <div className="mr-3 shrink-0">
-                                    <img className="mt-1 w-6 h-6 rounded-full"
+                                    <Image className="mt-1 w-6 h-6 rounded-full"
                                         src="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
                                         alt="Bonnie Green"/>
                                 </div>
@@ -1000,7 +1002,7 @@ export default function Blog() {
                             </li>
                             <li className="flex justify-between items-start">
                                 <div className="mr-3 shrink-0">
-                                    <img className="mt-1 w-6 h-6 rounded-full"
+                                    <Image className="mt-1 w-6 h-6 rounded-full"
                                         src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="Jese Leos"/>
                                 </div>
                                 <div className="mr-3">
@@ -1014,7 +1016,7 @@ export default function Blog() {
                             </li>
                             <li className="flex justify-between items-start">
                                 <div className="mr-3 shrink-0">
-                                    <img className="mt-1 w-6 h-6 rounded-full"
+                                    <Image className="mt-1 w-6 h-6 rounded-full"
                                         src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
                                         alt="Paul Livingston"/>
                                 </div>
@@ -1040,7 +1042,7 @@ export default function Blog() {
             <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
                 <article className="max-w-xs">
                     <a href="#">
-                        <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-1.png" className="mb-5 rounded-lg" alt="Image 1"/>
+                        <Image src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-1.png" className="mb-5 rounded-lg" alt="Image 1"/>
                     </a>
                     <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
                         <a href="#">Our first office</a>
@@ -1052,7 +1054,7 @@ export default function Blog() {
                 </article>
                 <article className="max-w-xs">
                     <a href="#">
-                        <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-2.png" className="mb-5 rounded-lg" alt="Image 2"/>
+                        <Image src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-2.png" className="mb-5 rounded-lg" alt="Image 2"/>
                     </a>
                     <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
                         <a href="#">Enterprise design tips</a>
@@ -1064,7 +1066,7 @@ export default function Blog() {
                 </article>
                 <article className="max-w-xs">
                     <a href="#">
-                        <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-3.png" className="mb-5 rounded-lg" alt="Image 3"/>
+                        <Image src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-3.png" className="mb-5 rounded-lg" alt="Image 3"/>
                     </a>
                     <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
                         <a href="#">We partnered up with Google</a>
@@ -1076,7 +1078,7 @@ export default function Blog() {
                 </article>
                 <article className="max-w-xs">
                     <a href="#">
-                        <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-4.png" className="mb-5 rounded-lg" alt="Image 4"/>
+                        <Image src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/article/blog-4.png" className="mb-5 rounded-lg" alt="Image 4"/>
                     </a>
                     <h2 className="mb-2 text-xl font-bold leading-tight text-gray-900 dark:text-white">
                         <a href="#">Our first project with React</a>
